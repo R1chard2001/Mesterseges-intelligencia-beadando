@@ -40,7 +40,7 @@ namespace LabdaLabirintus
                 if (kivalasztOperator.AlkalmazhatoE(jelenlegiCsucs.Allapot))
                 {
                     Csucs ujCsucs = new Csucs(kivalasztOperator.Alkalmaz(jelenlegiCsucs.Allapot), jelenlegiCsucs);
-                    if (ujCsucs.Korfigyeles())
+                    if (!ujCsucs.Korfigyeles())
                     {
                         jelenlegiCsucs = ujCsucs;
                     }

@@ -14,7 +14,7 @@ namespace LabdaLabirintus
             // 2.15 feladat
             Palya.PalyaLegeneralasa();
             Backtrack bt = new Backtrack();
-            List<Allapot> ut = bt.Keres(20);
+            List<Allapot> ut = bt.Keres(30);
             if (ut.Count > 0)
             {
                 bool exit = false;
@@ -23,7 +23,7 @@ namespace LabdaLabirintus
                 while (!exit)
                 {
                     Console.WriteLine("ESC: Kilépés, balra nyíl: előző állapot, jobbra nyíl következő állapot");
-                    Console.WriteLine("Lépés sorszáma: {0} ", index + 1);
+                    Console.WriteLine("Állapot sorszáma: {0} ", index + 1);
                     Console.WriteLine(ut[index]);
                     switch (Console.ReadKey(true).Key)
                     {

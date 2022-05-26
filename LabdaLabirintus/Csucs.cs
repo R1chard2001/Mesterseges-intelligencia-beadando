@@ -30,7 +30,7 @@ namespace LabdaLabirintus
 
         public bool Korfigyeles()
         {
-            Csucs jelenlegi = this;
+            Csucs jelenlegi = this.Szulo;
             while (jelenlegi != null)
             {
                 if (jelenlegi.Equals(this)) return true;
