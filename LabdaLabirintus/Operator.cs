@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace LabdaLabirintus
 {
-    enum Irany
+    public enum Irany
     {
         FEL,
         LE,
         JOBBRA,
         BALRA
     }
-    class Operator
+    public class Operator
     {
         public Irany Merre;
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LabdaLabirintus
 {
-    static class Palya
+    public static class Palya
     {
         public static Mezo[,] palya = new Mezo[8, 8];
         public static void PalyaLegeneralasa()
@@ -170,7 +170,7 @@ namespace LabdaLabirintus
         #endregion
     }
 
-    class Mezo
+     public class Mezo
     {
         public Mezo(bool falFent, bool falJobbra, bool falBalra, bool falLent)
         {

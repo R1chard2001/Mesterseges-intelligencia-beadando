@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabdaLabirintus
 {
-    class Csucs
+    public class Csucs
     {
         public Allapot Allapot;
         public int OperatorIndex;

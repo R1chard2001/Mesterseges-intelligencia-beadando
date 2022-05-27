@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LabdaLabirintus
 {
-    class Backtrack
+    public class Backtrack
     {
         private List<Operator> operatorok = new List<Operator>();
         public Backtrack()
@@ -39,7 +39,8 @@ namespace LabdaLabirintus
                 jelenlegiCsucs.OperatorIndex++;
                 if (kivalasztOperator.AlkalmazhatoE(jelenlegiCsucs.Allapot))
                 {
-                    Csucs ujCsucs = new Csucs(kivalasztOperator.Alkalmaz(jelenlegiCsucs.Allapot), jelenlegiCsucs);
+                    Allapot ujAllapot = kivalasztOperator.Alkalmaz((jelenlegiCsucs.Allapot));
+                    Csucs ujCsucs = new Csucs(ujAllapot, jelenlegiCsucs);
                     if (!ujCsucs.Korfigyeles())
                     {
                         jelenlegiCsucs = ujCsucs;

@@ -7,14 +7,16 @@ using System.Threading.Tasks;
 
 namespace LabdaLabirintus
 {
-    class Allapot
+    public class Allapot
     {
+        public static int KezdoX = 4;
+        public static int KezdoY = 1;
         public Point Hely;
         private static Point cel = new Point(2, 5);
 
         public Allapot()
         {
-            Hely = new Point(4, 1);
+            Hely = new Point(KezdoX, KezdoY);
         }
 
         public bool CellallapotE()
