@@ -27,7 +27,7 @@ namespace LabdaLabirintusUnitTeszt
             Palya.PalyaLegeneralasa();
             Allapot jelenlegiA = new Allapot();
             jelenlegiA.Hely.X = 0;
-            jelenlegiA.Hely.X = 1;
+            jelenlegiA.Hely.Y = 4;
             Csucs jelenlegiC = new Csucs(jelenlegiA, null);
             Csucs vartCsucs = jelenlegiC;
             
