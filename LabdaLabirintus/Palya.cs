@@ -12,6 +12,8 @@ namespace LabdaLabirintus
         public static Mezo[,] palya = new Mezo[8, 8];
         public static void PalyaLegeneralasa()
         {
+            palya = new Mezo[8, 8];
+
             palya[0, 0] = FJB();
             palya[1, 0] = FB();
             palya[2, 0] = FL();
